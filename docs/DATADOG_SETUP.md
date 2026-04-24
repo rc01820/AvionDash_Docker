@@ -150,7 +150,7 @@ In Datadog: **Logs → Pipelines → New Pipeline**
 **Pipeline 2 — FastAPI Application Logs**
 - Filter: `service:aviondash-app`
 - Add Processors:
-  1. **Grok Parser** for structured log lines:
+  1. **Parser** for structured log lines:
      ```
      %{TIMESTAMP_ISO8601:timestamp} %{LOGLEVEL:level} \[%{DATA:logger}\] %{GREEDYDATA:message}
      ```
